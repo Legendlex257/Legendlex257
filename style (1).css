@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3")
+      no-repeat center center fixed,
+    #000;
+  background-size: cover;
+  color: #e0e7ff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #1e3a8a;
+}
+
+p {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.15rem;
+  color: #e0e7ff;
+  text-shadow: 0 0 5px #0ff, 0 0 8px #1e3a8a;
+}
+
+/* Header Section */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3")
+      no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  border-bottom: 3px solid #fff;
+  position: relative;
+  color: #ffffff;
+  text-shadow: 0 0 5px #0ff;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Main Image Styling */
+.main-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+  transform: scale(1.02);
+}
+
+/* Button Styling */
+.button-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ffc107;
+  outline: none;
+  color: black;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #ff9800;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:focus {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 40px;
+  transition: background-color 0.3s ease;
+}
+
+footer:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Joke Section Styles */
+.joke-section {
+  background: url("https://www.transparenttextures.com/patterns/stardust.png"),
+    #111827;
+  color: #e0e7ff;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 1.5rem;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 0 20px #1e40af;
+  max-width: 800px;
+}
+
+.joke-section h2 {
+  text-align: center;
+  color: #a78bfa;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-shadow: 0 0 5px #0ff;
+}
+
+.joke,
+.joke-box {
+  background-color: #1f2937;
+  border-left: 6px solid #a78bfa;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s;
+}
+
+.joke:hover,
+.joke-box:hover {
+  transform: scale(1.02);
+}
+
+.joke-box h3 {
+  color: #f472b6;
+  margin-bottom: 0.5rem;
+}
+
+.joke p,
+.joke-box p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+  margin: 10px 0;
+}
+
+.joke-title {
+  font-weight: bold;
+  color: #ffcc00;
+  font-size: 1.2em;
+  margin-bottom: 0.5rem;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Final Message */
+.final-message {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border: 3px dashed #38bdf8;
+  padding: 2rem;
+  margin: 3rem auto;
+  border-radius: 1.5rem;
+  text-align: center;
+  max-width: 700px;
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.7);
+  animation: fadeInUp 1s ease forwards;
+  opacity: 1;
+}
+
+.final-message h2 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px #0ff;
+}
+
+.final-message p {
+  font-size: 1.3rem;
+  color: #e0e7ff;
+  line-height: 1.7;
+  text-shadow: 0 0 5px #3b82f6;
+}
